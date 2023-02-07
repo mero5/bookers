@@ -1,0 +1,33 @@
+
+<div>
+  <%= flash[:notice] %>
+</div>
+
+<% if @book.errors.any? %>
+  <%= @book.errors.count %>件のエラーが発生しました
+  <ul>
+    <% @book.errors.full_messages.each do |message| %>
+    <li><%= message %></li>
+    <% end %>
+  </ul>
+<% end %>
+
+
+<div class="show-show">
+  <div class="title-show">
+    <p><strong>Title:</strong>
+    <%= @book.title %></p>
+  </div>
+
+  <div class="body-show">
+    <p><strong>Body:</strong>
+    <%= @book.body %></p>
+  </div>
+
+  <div class="aaa">
+    <%= link_to "Edit", edit_book_path(@book.id) %>
+    <p class="aa">|</p>
+    <%= link_to "Back", books_path %>
+  </div>
+
+</div>

@@ -13,3 +13,76 @@
  *= require_tree .
  *= require_self
  */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+/*index-view*/
+.top {
+  margin: 33px;
+}
+
+.books, .newbook {
+  padding-bottom: 15px;
+}
+
+.ttt {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.title-index, .body-index {
+  padding-bottom: 10px;
+}
+
+
+
+/*show-view*/
+.show-show {
+  margin: 33px;
+  font-size: 13px;
+}
+
+.title-show {
+  margin: 0 33px 0 33px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.body-show {
+  margin: 33px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/*show-edit-view*/
+.aaa {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 33px;
+}
+
+.aa {
+  padding: 0 5px 0 5px;
+}
+
+
+
+
+/*edit-view*/
+.edit-edit {
+  margin: 33px;
+  font-size: 13px;
+}
+
+.edit-edit, .h1, .title-edit, .submit-edit, .body-edit, .submit-edit {
+  padding-bottom: 15px;
+}
+
+.aaaa {
+  display: flex;
+  flex-wrap: wrap;
+}
+
