@@ -24,10 +24,14 @@ class BooksController < ApplicationController
   end
 
   def destroy
-    book = Book.find(params[:id])
-    book.destroy
+    @book = Book.find(params[:id])
+    @book.destroy
     flash[:notice] = "Book was successfully destroyed."
     redirect_to '/books'
+  end
+
+  def book_params
+    params.require(:book).permit(:title, :body)
   end
 
   def update
@@ -39,10 +43,6 @@ class BooksController < ApplicationController
       @books = Book.all
       render :show
     end
-  end
-
-  def book_params
-    params.require(:book).permit(:title, :body)
   end
 
 end
